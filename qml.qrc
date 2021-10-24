@@ -3,5 +3,7 @@
         <file>main.qml</file>
         <file>forms/TextCard.qml</file>
         <file>forms/TextCardForm.ui.qml</file>
+        <file>forms/TextCardEditor.qml</file>
+        <file>forms/TextCardEditorForm.ui.qml</file>
     </qresource>
 </RCC>
