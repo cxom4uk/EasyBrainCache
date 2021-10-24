@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>forms/TextCard.qml</file>
+        <file>forms/TextCardForm.ui.qml</file>
     </qresource>
 </RCC>
