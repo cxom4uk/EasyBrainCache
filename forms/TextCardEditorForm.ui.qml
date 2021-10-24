@@ -1,4 +1,4 @@
-import QtQuick 2.12
+import QtQuick 2.4
 
 Item {
     property var card
