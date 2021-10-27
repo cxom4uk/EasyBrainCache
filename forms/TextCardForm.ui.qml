@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import QtQuick.Controls 2.4
 
 Item {
     // TODO: заменить на объект текстовой карточки
@@ -7,26 +8,33 @@ Item {
     width: 400
     height: 400
 
-    Column {
-        id: column
-        anchors.fill: parent
+    SwipeView {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        currentIndex: 1
 
-        Text {
-            id: head
-            text: qsTr(card.title)
-            font.pixelSize: 24 //TODO: Необходимо привязать размер текста к DPI
+        //TODO: Добавить чтение страниц КАРТОЧКИ
+        Column {
+            id: column
+            anchors.fill: parent
 
-            anchors.left: parent.left
-            anchors.right: parent.right
-        }
+            Text {
+                id: head
+                text: qsTr(card.title)
+                font.pixelSize: 24 //TODO: Необходимо привязать размер текста к DPI
 
-        Text {
-            id: body
-            text: qsTr(card.data)
-            font.pixelSize: 24 //TODO: Необходимо привязать размер текста к DPI
+                anchors.left: parent.left
+                anchors.right: parent.right
+            }
 
-            anchors.left: parent.left
-            anchors.right: parent.right
+            Text {
+                id: body
+                text: qsTr(card.data)
+                font.pixelSize: 24 //TODO: Необходимо привязать размер текста к DPI
+
+                anchors.left: parent.left
+                anchors.right: parent.right
+            }
         }
     }
 }
